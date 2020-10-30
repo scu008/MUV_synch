@@ -5,14 +5,14 @@ from device.synch import *
 
 
 # Information for &Cube
-cube_addr = '210.107.214.172'
+cube_addr = 'flws.iptime.org'
 cube_port = 3106
 monitor_sc = socket(AF_INET, SOCK_STREAM)
 monitor_sc.connect((cube_addr, cube_port))
 
 # Inforamtion for time server
 monitor = Monitor()
-monitor.server_addr = '210.107.214.172'
+monitor.server_addr = 'flws.iptime.org'
 monitor.server_port = '5005'
 
 # Information for the resource
